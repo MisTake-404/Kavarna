@@ -57,7 +57,7 @@ strong,
   @include setText(16px, 24px, 700);
 }
 
-a,
+// a,
 .text-link {
   @include setText(16px, 24px, 400);
   display: block;

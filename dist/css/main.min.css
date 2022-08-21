@@ -1359,7 +1359,6 @@ strong,
   line-height: 24px;
 }
 
-a,
 .text-link {
   font-size: 16px;
   font-weight: 400;
@@ -2204,7 +2203,56 @@ a,
 /* Блоки */
 /* Шапка сайта */
 .header {
+  padding: 20px 0 21px;
   width: 100%;
+  background-color: #4E3D34;
+}
+.header__logo {
+  grid-column: span 4;
+}
+.header__menu {
+  grid-column: span 8;
+  display: flex;
+  justify-content: space-between;
+}
+.header__item {
+  padding-right: 10px;
+  margin: auto 0;
+}
+.header__item:last-child {
+  padding-right: 0;
+}
+.header__link {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  color: #fff;
+}
+.header__link:hover {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  color: #FAD541;
+}
+.header__link--img-logo {
+  width: 87px;
+  height: 79px;
+  background-image: url("../../img/logo.png");
+}
+.header__link--img-cart {
+  width: 35px;
+  height: 33px;
+  background-image: url("../../img/cart.png");
+}
+.header__link--img-search {
+  width: 32px;
+  height: 32px;
+  background-image: url("../../img/search.png");
+}
+
+.grid__wrapper {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* Подвал сайта */
