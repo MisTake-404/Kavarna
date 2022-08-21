@@ -16,22 +16,28 @@
 
 	&__menu {
 		grid-column: span 8;
-		display: flex;
-		justify-content: space-between;
+		display: grid;
+		grid-template-columns: repeat(8, auto);
 	}
+	@media (max-width: $breakpoint-xl) {
+		&__menu {
+			grid-column: span 11;
+		}
+		&__logo {
+	    grid-column: span 1;
+		}
+  }
 
 	&__item {
-		padding-right: 10px;
-		margin: auto 0;
-	}
-	&__item:last-child {
-		padding-right: 0;
+		// outline: 1px solid red;
+		margin: auto auto;
 	}
 
 	&__item--active {
 	}
 
 	&__link {
+		// outline: 1px solid green;
 		@include setText(20px, 60px, 500);
 		color: $mainBackground;
 	}
@@ -44,10 +50,16 @@
 		height: 79px;
 		background-image: url("../../img/logo.png");
 	}
+	&__item--img-cart{
+		margin: auto 0 auto auto;
+	}
 	&__link--img-cart {
 		width: 35px;
 		height: 33px;
 		background-image: url("../../img/cart.png");
+	}
+	&__item--img-search{
+		margin: auto 0 auto auto;
 	}
 	&__link--img-search{
 		width: 32px;
