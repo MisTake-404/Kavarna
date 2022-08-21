@@ -1,0 +1,127 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Main Files ------------------------------
+//  ------------------------------------------------------------------------------
+
+/* Импортные CSS / SCSS файлы, плагины, модули */
+@import 'import/init.scss';
+
+/* Переменные */
+@import 'variables.scss';
+
+/* Миксины */
+@import 'mixins.scss';
+
+/* Обнуление стилей */
+@import 'preset.scss';
+
+/* Шрифты */
+@import 'fonts.scss';
+
+/* Типографика */
+@import 'typography.scss';
+
+/* Анимации */
+@import 'animations.scss';
+
+/* Компоненты */
+@import 'components/init.scss';
+
+/* Блоки */
+@import 'blocks/init.scss';
+
+/* Страницы */
+@import 'pages/init.scss';
+
+// Свои стили
+.container{
+	max-width: 1360px;
+	margin: 0 auto;
+}
+.img {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+.line {
+	width: 91px;
+	height: 7px;
+}
+.line-break {
+}
+
+// 1 Секция
+.about {
+	padding: 227px 0 200px;
+	text-align: center;
+	background-image: url("../img/background-about.png");
+
+	&__title {
+	}
+	&__line {
+		background-color: $mainYellow;
+		margin: 0 auto 59px;
+	}
+	&__desc {
+	}
+}
+
+
+// 2 Секция
+.visit {
+	text-align: center;
+	background-color: $mainYellow;
+	padding: 11px 0;
+
+	&__photo {
+		margin-bottom: 136px;
+	}
+
+	&__img {
+	}
+
+	&__container {
+	}
+
+	&__title {
+	}
+
+	&__line {
+		background-color: $mainBackground;
+		margin: 0 auto 64px;
+	}
+}
+
+
+// 3 Секция
+.address {
+	text-align: center;
+	margin-bottom: 170px;
+	&__info {
+		margin: 88px 0 80px;
+	}
+	&__item {
+		grid-column: span 4;
+	}
+	&__title {
+		margin-bottom: 67px;
+	}
+	&__text {
+	}
+	&__desc {
+		display: block;
+	}
+	&__map {
+	}
+	&__img {
+	}
+
+}
+
+.grid {
+
+	&__wrapper {
+
+	}
+
+}
