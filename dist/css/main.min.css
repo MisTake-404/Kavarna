@@ -1084,7 +1084,7 @@ button.swiper-pagination-bullet {
 *:after {
   box-sizing: border-box;
   font-size: 10px;
-  font-family: MyriadPro;
+  font-family: Montserrat;
   font-style: normal;
   color: #000;
   font-weight: 400;
@@ -1160,6 +1160,13 @@ textarea {
 
 /* Шрифты */
 @font-face {
+  font-family: KronaOne;
+  font-display: swap;
+  src: url("../fonts/KronaOne-Regular.woff2") format("woff2"), url("../fonts/KronaOne-Regular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
   font-family: Montserrat;
   font-display: swap;
   src: url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.woff") format("woff");
@@ -1170,6 +1177,13 @@ textarea {
   font-family: Montserrat;
   font-display: swap;
   src: url("../fonts/Montserrat-BlackItalic.woff2") format("woff2"), url("../fonts/Montserrat-BlackItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-BoldItalic.woff2") format("woff2"), url("../fonts/Montserrat-BoldItalic.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -1190,13 +1204,6 @@ textarea {
 @font-face {
   font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Montserrat-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBoldItalic.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
   src: url("../fonts/Montserrat-ExtraLight.woff2") format("woff2"), url("../fonts/Montserrat-ExtraLight.woff") format("woff");
   font-weight: 200;
   font-style: normal;
@@ -1204,14 +1211,14 @@ textarea {
 @font-face {
   font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Montserrat-ExtraLightItalic.woff2") format("woff2"), url("../fonts/Montserrat-ExtraLightItalic.woff") format("woff");
+  src: url("../fonts/Montserrat-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBoldItalic.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Montserrat-BoldItalic.woff2") format("woff2"), url("../fonts/Montserrat-BoldItalic.woff") format("woff");
+  src: url("../fonts/Montserrat-ExtraLightItalic.woff2") format("woff2"), url("../fonts/Montserrat-ExtraLightItalic.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -1239,14 +1246,14 @@ textarea {
 @font-face {
   font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  src: url("../fonts/Montserrat-MediumItalic.woff2") format("woff2"), url("../fonts/Montserrat-MediumItalic.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Montserrat-MediumItalic.woff2") format("woff2"), url("../fonts/Montserrat-MediumItalic.woff") format("woff");
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -1285,32 +1292,28 @@ textarea {
   font-weight: 400;
   font-style: normal;
 }
-@font-face {
-  font-family: MyriadPro;
-  font-display: swap;
-  src: url("../fonts/MyriadPro-Light.woff2") format("woff2"), url("../fonts/MyriadPro-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
 /* Типографика */
 .title-h1 {
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 72px;
+  font-family: KronaOne;
   color: #4E3D34;
 }
 
 .title-h2 {
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 72px;
+  font-family: KronaOne;
   color: #4E3D34;
 }
 
 .title-h3 {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: auto;
+  font-family: KronaOne;
   color: #4E3D34;
 }
 
@@ -1337,13 +1340,14 @@ h6,
 
 .text {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 40px;
+  color: #4E3D34;
 }
 
 .text-span {
   font-size: 21px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: auto;
   color: #4E3D34;
 }
@@ -2215,6 +2219,11 @@ a,
   margin: 0 auto;
 }
 
+@media (max-width: 1360px) {
+  .container {
+    padding: 0 10px;
+  }
+}
 .img {
   display: block;
   width: 100%;
@@ -2236,9 +2245,26 @@ a,
   background-color: #FAD541;
   margin: 0 auto 59px;
 }
+@media (max-width: 992px) {
+  .about {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 576px) {
+  .about {
+    padding: 30px 0 30px;
+  }
+  .about__title {
+    font-size: 25px;
+  }
+  .about__desc {
+    font-size: 20px;
+  }
+}
 .visit {
   text-align: center;
-  background-color: #FAD541;
+  background-image: url("../img/yellow_block.png");
+  background-position: bottom;
   padding: 11px 0;
 }
 .visit__photo {
@@ -2254,14 +2280,19 @@ a,
   margin-bottom: 170px;
 }
 .address__info {
-  margin: 88px 0 80px;
+  margin: 0 0 80px;
 }
 .address__item {
   grid-column: span 4;
 }
 .address__title {
-  margin-bottom: 67px;
+  margin: 88px 0 67px;
 }
 .address__desc {
   display: block;
+}
+@media (max-width: 576px) {
+  .grid__wrapper {
+    grid-template-columns: 1fr;
+  }
 }

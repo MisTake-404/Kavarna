@@ -37,6 +37,11 @@
 	max-width: 1360px;
 	margin: 0 auto;
 }
+@media (max-width: 1360px) {
+	.container{
+		padding: 0 10px;
+	}
+}
 .img {
 	display: block;
 	width: 100%;
@@ -65,12 +70,29 @@
 	&__desc {
 	}
 }
+@media (max-width: $breakpoint-lg) {
+	.about{
+		padding-top: 100px;
+	}
+}
+@media (max-width: $breakpoint-sm) {
+	.about{
+		padding: 30px 0 30px;
+		&__title {
+			font-size: 25px;
+		}
+		&__desc {
+			font-size: 20px;
+		}
+	}
+}
 
 
 // 2 Секция
 .visit {
 	text-align: center;
-	background-color: $mainYellow;
+	background-image: url("../img/yellow_block.png");
+	background-position: bottom;
 	padding: 11px 0;
 
 	&__photo {
@@ -98,13 +120,13 @@
 	text-align: center;
 	margin-bottom: 170px;
 	&__info {
-		margin: 88px 0 80px;
+		margin: 0 0 80px;
 	}
 	&__item {
 		grid-column: span 4;
 	}
 	&__title {
-		margin-bottom: 67px;
+		margin: 88px 0 67px;
 	}
 	&__text {
 	}
@@ -118,9 +140,11 @@
 }
 
 .grid {
-
 	&__wrapper {
-
 	}
-
+	@media (max-width: $breakpoint-sm) {
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
 }
