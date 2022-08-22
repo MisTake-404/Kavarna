@@ -2360,6 +2360,37 @@ body {
   width: 49.5833333333vw;
   height: 38.18vw;
 }
+@media (max-width: 576px) {
+  .visit__img--1 {
+    width: 100%;
+    min-height: unset;
+    height: 38.13vw;
+    margin: 0.52vw 0 0.52vw;
+  }
+  .visit__img--2 {
+    width: 100%;
+    min-height: unset;
+    height: 27.45vw;
+    margin: 0 0 0.52vw;
+  }
+  .visit__img--3 {
+    width: 100%;
+    min-height: unset;
+    height: 27.45vw;
+    margin: 0 0 0.52vw;
+  }
+  .visit__img--4 {
+    width: 100%;
+    min-height: unset;
+    height: 38.18vw;
+    margin: 0 0 0.52vw;
+  }
+  .visit__img--5 {
+    width: 100%;
+    min-height: unset;
+    height: 38.18vw;
+  }
+}
 .visit__line {
   background-color: #fff;
   margin: 0 auto 64px;
