@@ -34,7 +34,7 @@
 
 // Свои стили
 body{
-	overflow-x: hidden;
+	// overflow-x: hidden;
 }
 .container{
 	max-width: 1360px;
@@ -153,31 +153,32 @@ $mainVW: calc($mainWidth / 100);
 	&__img {
 	}
 	&__img--1 {
-		width: 100vw;
+		// width: 100vw;
+		width: 100%;
 		height: 38.13vw;
 		margin: 0.52vw 0 0.52vw;
 	}
 	&__img--2 {
-		// width: 58.85vw;
-		width: calc(1130vw / $mainVW);
+		width: 58.85vw;
+		// width: calc(1130vw / $mainVW);
 		height: 27.45vw;
 		margin: 0 0.52vw 0.52vw 0;
 	}
 	&__img--3 {
-		width: calc(780vw / $mainVW);
-		// width: 40.63vw;
+		// width: calc(780vw / $mainVW);
+		width: 40.63vw;
 		height: 27.45vw;
 		margin: 0 0 0.52vw 0;
 	}
 	&__img--4 {
-		width: calc(958vw / $mainVW);
-		// width: 49.90vw;
+		// width: calc(958vw / $mainVW);
+		width: 49.90vw;
 		height: 38.18vw;
 		margin: 0 0.52vw 0 0;
 	}
 	&__img--5 {
-		width: calc(952vw / $mainVW);
-		// width: 49.58vw;
+		// width: calc(952vw / $mainVW);
+		width: 49.58vw;
 		height: 38.18vw;
 	}
 
@@ -253,12 +254,15 @@ $mainVW: calc($mainWidth / 100);
 	}
 
 	.grid {
-		&__wrapper {
+		.grid__wrapper {
 		}
-		@media (max-width: $breakpoint-sm) {
-	    &__wrapper {
-	      grid-template-columns: 1fr;
-	    }
-	  }
+	}
+}
+@media (max-width: $breakpoint-sm) {
+	.grid__wrapper {
+		grid-template-columns: 1fr;
+	}
+	.address__img {
+		height: 80vh;
 	}
 }
