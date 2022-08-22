@@ -2272,6 +2272,10 @@ strong,
 
 /* Страницы */
 /* Страница: Главная */
+body {
+  overflow-x: hidden;
+}
+
 .container {
   max-width: 1360px;
   margin: 0 auto;
@@ -2320,13 +2324,41 @@ strong,
   }
 }
 .visit {
+  width: 100vw;
   text-align: center;
   background-image: url("../img/yellow_block.png");
   background-position: bottom;
-  padding: 11px 0;
+  padding: 0 0 11px;
 }
 .visit__photo {
   margin-bottom: 136px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.visit__img--1 {
+  width: 100vw;
+  height: 38.13vw;
+  margin: 0.52vw 0 0.52vw;
+}
+.visit__img--2 {
+  width: 58.8541666667vw;
+  height: 27.45vw;
+  margin: 0 0.52vw 0.52vw 0;
+}
+.visit__img--3 {
+  width: 40.625vw;
+  height: 27.45vw;
+  margin: 0 0 0.52vw 0;
+}
+.visit__img--4 {
+  width: 49.8958333333vw;
+  height: 38.18vw;
+  margin: 0 0.52vw 0 0;
+}
+.visit__img--5 {
+  width: 49.5833333333vw;
+  height: 38.18vw;
 }
 .visit__line {
   background-color: #fff;
@@ -2350,7 +2382,7 @@ strong,
   display: block;
 }
 @media (max-width: 576px) {
-  .grid__wrapper {
+  .address .grid__wrapper {
     grid-template-columns: 1fr;
   }
 }
