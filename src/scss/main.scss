@@ -95,7 +95,7 @@ $mainWidth: 1920;
 $mainVW: calc($mainWidth / 100);
 // 2 Секция
 .visit {
-	width: 100vw;
+	width: 100%;
 	text-align: center;
 	background-image: url("../img/yellow_block.png");
 	background-position: bottom;
@@ -107,7 +107,7 @@ $mainVW: calc($mainWidth / 100);
 		margin-bottom: 136px;
 		// background-color: red;
 
-		// width: 100vw;
+		width: 100%;
 		// overflow: hidden;
 		display: flex;
 		flex-direction: row;
@@ -159,26 +159,27 @@ $mainVW: calc($mainWidth / 100);
 		margin: 0.52vw 0 0.52vw;
 	}
 	&__img--2 {
-		width: 58.85vw;
+		width: 57%;
 		// width: calc(1130vw / $mainVW);
 		height: 27.45vw;
 		margin: 0 0.52vw 0.52vw 0;
 	}
 	&__img--3 {
 		// width: calc(780vw / $mainVW);
-		width: 40.63vw;
+		width: 40.63%;
+		width: calc(100vw - 58.85vw);
 		height: 27.45vw;
 		margin: 0 0 0.52vw 0;
 	}
 	&__img--4 {
 		// width: calc(958vw / $mainVW);
-		width: 49.90vw;
+		width: 49.3%;
 		height: 38.18vw;
 		margin: 0 0.52vw 0 0;
 	}
 	&__img--5 {
 		// width: calc(952vw / $mainVW);
-		width: 49.58vw;
+		width: 49.58%;
 		height: 38.18vw;
 	}
 
@@ -258,7 +259,7 @@ $mainVW: calc($mainWidth / 100);
 		}
 	}
 }
-@media (max-width: $breakpoint-sm) {
+@media (max-width: $breakpoint-md) {
 	.grid__wrapper {
 		grid-template-columns: 1fr;
 	}
