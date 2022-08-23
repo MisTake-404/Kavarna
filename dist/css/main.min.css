@@ -2310,6 +2310,40 @@ strong,
     top: 8px;
   }
 }
+.modal .menu {
+  flex-wrap: wrap;
+}
+.modal .menu__list {
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+}
+.modal .menu__item {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  height: 60px;
+}
+.modal .menu__link {
+  margin: 0 auto;
+}
+.modal .menu__item--cart, .modal .menu__item--search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal__content {
+  background-color: #4E3D34;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal .modal__close {
+  background-size: cover;
+  background-image: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.11 2.697L2.698 4.11 6.586 8l-3.89 3.89 1.415 1.413L8 9.414l3.89 3.89 1.413-1.415L9.414 8l3.89-3.89-1.415-1.413L8 6.586l-3.89-3.89z' fill='%23fff'%3E%3C/path%3E%3C/svg%3E");
+}
+
 /* Подвал сайта */
 .flex {
   width: 100%;
@@ -2336,9 +2370,10 @@ strong,
   text-decoration: none;
 }
 .footer__link--img-logo {
-  width: 87px;
-  height: 79px;
-  background-image: url("../../img/logo.png");
+  width: 118px;
+  height: 105px;
+  background-size: cover;
+  background-image: url("../../img/logo-big.png");
 }
 .footer__contacts {
   margin: 40px 0 75px;

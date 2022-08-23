@@ -24,9 +24,10 @@
 		text-decoration: none;
 	}
 	&__link--img-logo {
-		width: 87px;
-		height: 79px;
-		background-image: url("../../img/logo.png");
+		width: 118px;
+		height: 105px;
+		background-size: cover;
+		background-image: url("../../img/logo-big.png");
 	}
 	&__contacts{
 		// width: 100%;
