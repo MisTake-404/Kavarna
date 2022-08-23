@@ -2,6 +2,93 @@
 //  ----------------------------- CSS Blocks Files ------------------------------
 //  ------------------------------------------------------------------------------
 
-.footer {
-  width: 100%;
+.flex {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
+.footer {
+	width: 100%;
+	background-color: $mainBrown;
+	padding: 90px 0 100px;
+
+	&__logo {
+		grid-column: span 12;
+		margin: 0 auto;
+	}
+	&__link {
+		@include setText(19px, auto, 600);
+		color: $mainYellow;
+		text-decoration: none;
+	}
+	&__link--img-logo {
+		width: 87px;
+		height: 79px;
+		background-image: url("../../img/logo.png");
+	}
+	&__contacts{
+		// width: 100%;
+		margin: 40px 0 75px;
+	}
+	&__info {
+    color: $mainBackground;
+		@include setText(21px, 1, 500);
+		text-align: center;
+	}
+	&__info--1 {
+		margin: 50px 0;
+		grid-column: span 4;
+	}
+	&__info--2 {
+		grid-column: span 4;
+	}
+	&__info--3 {
+		grid-column: span 4;
+	}
+	@media (max-width: $breakpoint-md) {
+		&__info{
+			margin: 10px auto;
+		}
+		&__info--1 {
+			margin: 50px 0;
+		}
+		&__contacts{
+			margin: 40px 0;
+		}
+	}
+
+	&__flex{
+	}
+	&__flex--col{
+		flex-direction: column;
+	}
+}
+
+.contacts-icons {
+	width: 150px;
+	margin: 0 auto;
+
+  &__instagram {
+		display: block;
+		width: 63px;
+		height: 62px;
+		background-image: url("../../img/INSTAGRAM.png");
+  }
+  &__facebook {
+		display: block;
+		width: 63px;
+		height: 62px;
+		background-image: url("../../img/FACEBOOK.png");
+  }
+}
+// .container {
+// }
+
+// .logo {
+// }
+// .text-link {
+// }
+// .text {
+// }

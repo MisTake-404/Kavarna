@@ -2385,6 +2385,10 @@ strong,
 .menu__btn > span::after {
     background-color: #FAD541;
   }
+
+  .header__menu {
+    width: 100%;
+  }
 }
 @media (max-width: 576px) {
   .grid__wrapper {
@@ -2392,8 +2396,85 @@ strong,
   }
 }
 /* Подвал сайта */
+.flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .footer {
   width: 100%;
+  background-color: #4E3D34;
+  padding: 90px 0 100px;
+}
+.footer__logo {
+  grid-column: span 12;
+  margin: 0 auto;
+}
+.footer__link {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: auto;
+  color: #FAD541;
+  text-decoration: none;
+}
+.footer__link--img-logo {
+  width: 87px;
+  height: 79px;
+  background-image: url("../../img/logo.png");
+}
+.footer__contacts {
+  margin: 40px 0 75px;
+}
+.footer__info {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+}
+.footer__info--1 {
+  margin: 50px 0;
+  grid-column: span 4;
+}
+.footer__info--2 {
+  grid-column: span 4;
+}
+.footer__info--3 {
+  grid-column: span 4;
+}
+@media (max-width: 768px) {
+  .footer__info {
+    margin: 10px auto;
+  }
+  .footer__info--1 {
+    margin: 50px 0;
+  }
+  .footer__contacts {
+    margin: 40px 0;
+  }
+}
+.footer__flex--col {
+  flex-direction: column;
+}
+
+.contacts-icons {
+  width: 150px;
+  margin: 0 auto;
+}
+.contacts-icons__instagram {
+  display: block;
+  width: 63px;
+  height: 62px;
+  background-image: url("../../img/INSTAGRAM.png");
+}
+.contacts-icons__facebook {
+  display: block;
+  width: 63px;
+  height: 62px;
+  background-image: url("../../img/FACEBOOK.png");
 }
 
 /* Страницы */

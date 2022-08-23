@@ -206,6 +206,9 @@
 	.menu__btn > span::after {
 		background-color: $mainYellow;
 	}
+	.header__menu{
+		width: 100%;
+	}
 }
 
 @media (max-width: $breakpoint-sm) {
