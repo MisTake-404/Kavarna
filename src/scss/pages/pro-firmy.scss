@@ -1,0 +1,253 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Pages: Для компаний-------------------------
+//  ------------------------------------------------------------------------------
+.pro-firmy {
+  padding: 230px 0 200px;
+  text-align: center;
+
+	background-image: url("../img/watermark.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	&__container{
+		margin-bottom: 140px;
+	}
+	&__title {
+	}
+
+	&__line {
+    margin: 0 auto 59px;
+		background-color: $mainYellow;
+	}
+
+	&__desc {
+	}
+
+	&__photo{
+		display: flex;
+		justify-content: space-between;
+		-webkit-box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.2);
+		-moz-box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.2);
+		box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.2);
+	}
+
+	&__img{
+		width: 33%;
+	}
+	@media (max-width: $breakpoint-sm) {
+		&__photo {
+			flex-wrap: wrap;
+		}
+		&__img{
+			width: 100%;
+		}
+		&__desc{
+			font-size: 20px;
+		}
+	}
+}
+@media (max-width: $breakpoint-lg) {
+	.pro-firmy{
+		padding-top: calc(230px / 4);
+	}
+}
+
+.customers {
+	padding: 170px 80px 200px;
+	background-color: $mainYellow;
+
+	&__title {
+		text-align: center;
+		margin-bottom: 150px;
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 120px;
+		grid-row-gap: 90px;
+	}
+
+	&__item {
+	}
+
+	&__item {
+
+	}
+
+}
+
+.comment {
+
+	&__person {
+		position: relative;
+		padding-left: 110px;
+	}
+
+	&__photo {
+		position: absolute;
+		top: -20px;
+		left: 30px;
+		width: 71px;
+		height: 71px;
+	}
+
+	&__name {
+		font-size: 21px;
+	}
+
+	&__post {
+		font-size: 16px;
+	}
+
+	&__content {
+		background-color: $mainBrown;
+		border-radius: 100px;
+		color: $mainBackground;
+		padding: 30px;
+		@include setText(16px, 22px, 500);
+	}
+}
+
+@media (max-width: $breakpoint-lg) {
+	.customers {
+		padding: 30px 10px 50px;
+
+		&__title{
+			margin-bottom: 50px;
+		}
+
+		&__list {
+			grid-template-columns: 1fr 1fr;
+			grid-column-gap: 60px;
+			grid-row-gap: 45px;
+		}
+	}
+	@media (max-width: $breakpoint-md) {
+		.customers {
+			&__list {
+				grid-template-columns: 1fr;
+				// grid-column-gap: 60px;
+				// grid-row-gap: 45px;
+			}
+		}
+	}
+	@media (max-width: $breakpoint-sm) {
+		.comment {
+			&__person {
+				padding-left: 80px;
+			}
+
+			&__photo {
+				top: -10px;
+				left: 0;
+			}
+			&__name {
+				font-size: 18px;
+			}
+
+			&__post {
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+.connection {
+	padding: 270px 0 200px;
+
+	&__title {
+		text-align: center;
+	}
+
+	&__list {
+		list-style-type: disc;
+		margin: 100px auto;
+		max-width: 880px;
+		padding-left: 30px;
+	}
+
+	&__item {
+		color: $mainYellow;
+	}
+	&__item--text {
+		@include setText(23px, auto, 500);
+	}
+
+	&__form {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		max-width: 1050px;
+		margin: 0 auto;
+	}
+
+	&__name {
+		@include setText(21px, auto, 500);
+		width: calc(50% - 10px);
+		margin: 0 20px 20px 0;
+		border: 3px solid $mainYellow;
+		border-radius: 10px;
+		padding: 30px 40px;
+		-webkit-box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2) inset;
+		-moz-box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2) inset;
+		box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2) inset;
+	}
+
+	&__email {
+		@include setText(21px, auto, 500);
+		width: calc(50% - 10px);
+		margin: 0 0 20px 0;
+		border: 3px solid $mainYellow;
+		border-radius: 10px;
+		padding: 30px 40px;
+		-webkit-box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2) inset;
+		-moz-box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2) inset;
+		box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2) inset;
+	}
+
+	&__text {
+		@include setText(21px, auto, 500);
+		width: 100%;
+		border: 3px solid $mainYellow;
+		border-radius: 10px;
+		padding: 30px 40px;
+		-webkit-box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2) inset;
+		-moz-box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2) inset;
+		box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2) inset;
+	}
+	&__btn{
+		@include setText(21px, auto, 600);
+		background-color: $mainYellow;
+		border-radius: 100px;
+		padding: 30px 60px;
+		margin: 60px auto 0;
+	}
+
+}
+@media (max-width: $breakpoint-lg) {
+	.connection{
+		padding-top: calc(270px / 4);
+		padding-bottom: calc(200px / 4);
+
+		&__list{
+			margin: calc(100px / 4) auto calc(100px / 2);
+		}
+		&__btn{
+			margin: 40px auto 0;
+		}
+	}
+}
+@media (max-width: $breakpoint-md) {
+}
+@media (max-width: $breakpoint-sm) {
+	.connection{
+		&__name {
+			width: 100%;
+			margin-right: 0;
+		}
+		&__email {
+			width: 100%;
+		}
+	}
+}
