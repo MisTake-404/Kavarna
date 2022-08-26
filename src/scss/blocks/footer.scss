@@ -22,12 +22,16 @@
 		@include setText(19px, auto, 600);
 		color: $mainYellow;
 		text-decoration: none;
+		transition: color $timeTrans linear;
 	}
-	&__link--img-logo {
+	&__link:hover {
+		color: $mainBackground;
+	}
+	&__link--logo {
 		width: 118px;
 		height: 105px;
-		background-size: cover;
-		background-image: url("../../img/logo-big.png");
+	}
+	&__link--logo--img{
 	}
 	&__contacts{
 		// width: 100%;
@@ -45,8 +49,20 @@
 	&__info--2 {
 		grid-column: span 4;
 	}
+	&__info--2--email {
+		margin: auto 0;
+	}
 	&__info--3 {
 		grid-column: span 4;
+	}
+	&__info--link{
+		color: $mainBackground;
+		@include setText(21px, 1, 500);
+		text-decoration: none;
+		transition: color $timeTrans linear;
+	}
+	&__info--link:hover{
+		color: $mainYellow;
 	}
 	@media (max-width: $breakpoint-md) {
 		&__info{
@@ -73,15 +89,24 @@
 
   &__instagram {
 		display: block;
-		width: 63px;
-		height: 62px;
+		width: 43px;
+		height: 42px;
+		background-position: center;
+		background-size: cover;
 		background-image: url("../../img/INSTAGRAM.png");
+		transition: opacity $timeTrans linear;
   }
   &__facebook {
 		display: block;
-		width: 63px;
-		height: 62px;
+		width: 43px;
+		height: 42px;
+		background-position: center;
+		background-size: cover;
 		background-image: url("../../img/FACEBOOK.png");
+		transition: opacity $timeTrans linear;
+  }
+	&__facebook:hover,  &__instagram:hover{
+		opacity: 0.8;
   }
 }
 // .container {

@@ -24,22 +24,24 @@
   <link rel="stylesheet" href="css/main.min.css" />
 </head>
 <body>
-  <div class="modal">
-    <div class="modal__content">
-      <nav class="menu">
-        <ul class="menu__list menu__list--link">
-          <li class="menu__item"><a href="/" class="menu__link text-link">ÚVOD</a></li>
-          <li class="menu__item"><a href="/e-shop.html" class="menu__link text-link">E-SHOP</a></li>
-          <li class="menu__item"><a href="/pro-firmy.html" class="menu__link text-link">PRO FIRMY</a></li>
-          <li class="menu__item"><a href="/kavarna.html" class="menu__link text-link">KAVÁRNA</a></li>
-          <li class="menu__item"><a href="/o-nas.html" class="menu__link text-link">O NÁS</a></li>
-          <li class="menu__item"><a href="/contacts.html" class="menu__link text-link">KONTAKT</a></li>
-        </ul>
-        <ul class="menu__list menu__list--icon">
-          <li class="menu__item menu__item--cart"><a href="" class="menu__link text-link menu__link--cart"></a></li>
-          <li class="menu__item menu__item--search"><a href="" class="menu__link text-link menu__link--search"></a></li>
-        </ul>
-      </nav>
+  <div class="modal"> <!-- modal--visible -->
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <nav class="menu ">
+          <ul class="menu__list menu__list--link">
+            <li class="menu__item"><a href="/" class="menu__link text-link">ÚVOD</a></li>
+            <li class="menu__item"><a href="/e-shop.html" class="menu__link text-link">E-SHOP</a></li>
+            <li class="menu__item"><a href="/pro-firmy.html" class="menu__link text-link">PRO FIRMY</a></li>
+            <li class="menu__item"><a href="/kavarna.html" class="menu__link text-link">KAVÁRNA</a></li>
+            <li class="menu__item"><a href="/o-nas.html" class="menu__link text-link">O NÁS</a></li>
+            <li class="menu__item"><a href="/contacts.html" class="menu__link text-link">KONTAKT</a></li>
+          </ul>
+          <ul class="menu__list menu__list--icon">
+            <li class="menu__item menu__item--cart"><a href="" class="menu__link text-link menu__link--cart"></a></li>
+            <li class="menu__item menu__item--search"><a href="" class="menu__link text-link menu__link--search"></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <div class="modal__close"></div>
   </div>
@@ -48,7 +50,9 @@
     <div class="grid">
       <div class="grid__wrapper header__content">
         <div class="logo header__logo">
-          <a href="" class="logo__link text-link"></a>
+          <a href="/" class="logo__link text-link">
+            <img src="../img/LOGO-SMALL.png" alt="" class="img">
+          </a>
         </div>
         <nav class="menu header__menu">
           <ul class="menu__list menu__list--link">

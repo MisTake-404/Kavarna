@@ -3,9 +3,9 @@
 //  ------------------------------------------------------------------------------
 
 .title-block {
-	padding: 230px 0 0 0;
+	padding: 186px 0 0 0;
 	// margin-top: 230px;
-	margin-bottom: 20px;
+	// margin-bottom: 20px;
 
 	&__container {
 		text-align: center;
@@ -40,6 +40,9 @@
 }
 
 .address {
+	background-image: url(../../img/address-bg.png);
+	background-position: left top 210px;
+	background-repeat: no-repeat;
 
 	&__info {
 
@@ -50,7 +53,7 @@
 	}
 
 	&__title {
-
+		margin-top: 80px;
 	}
 	@media (max-width: $breakpoint-lg) {
 		&__title{
@@ -134,9 +137,15 @@
 		@include setText(21px, auto, 600);
 		padding: 30px 60px;
 		border: 1px solid $mainBrown;
+		background-color: transparent;
+		transition: color $timeTrans linear, background-color $timeTrans linear;
+	}
+	&__link:hover {
+		color: $mainBackground;
+		background-color: $mainBrown;
 	}
 
-	@media (max-width: $breakpoint-sm) {
+	@media (max-width: $breakpoint-md) {
 		&__photo {
 			flex-wrap: wrap;
 		}
