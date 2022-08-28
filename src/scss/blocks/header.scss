@@ -77,7 +77,7 @@
 		background-image: url("../../img/search.png");
 		transition: opacity $timeTrans linear;
 	}
-	&__item--search:hover, &__link--cart:hover {
+	&__link--search:hover, &__link--cart:hover {
 		opacity: 0.8;
 	}
 }

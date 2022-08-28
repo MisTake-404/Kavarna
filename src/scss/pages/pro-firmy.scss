@@ -139,6 +139,7 @@
 		// font-size: 21px;
 		@include setText(24px, 18px, 500);
 		color: $mainText;
+		margin-bottom: 4px;
 	}
 
 	&__post {

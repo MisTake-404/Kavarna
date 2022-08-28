@@ -110,25 +110,10 @@ $mainVW: calc($mainWidth / 100);
 	}
 
 	@media (max-width: $breakpoint-sm) {
-		&__img--1 {
+		&__img{
 			width: 100%;
-			min-height: unset;
-		}
-		&__img--2 {
-			width: 100%;
-			min-height: unset;
-		}
-		&__img--3 {
-			width: 100%;
-			min-height: unset;
-		}
-		&__img--4 {
-			width: 100%;
-			min-height: unset;
-		}
-		&__img--5 {
-			width: 100%;
-			min-height: unset;
+			height: 400px;
+			margin: 0;
 		}
 
 		&__photo {

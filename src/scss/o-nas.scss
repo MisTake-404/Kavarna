@@ -1,3 +1,102 @@
 //  ------------------------------------------------------------------------------
 //  ----------------------------- CSS Pages: О нас -----------------------------
 //  ------------------------------------------------------------------------------
+.about-company {
+  .title-block {
+
+    &__container {
+    }
+
+    &__title {
+    }
+
+    &__line {
+      margin-bottom: 160px;
+    }
+  }
+  @media (max-width: $breakpoint-lg) {
+    .title-block {
+      &__line {
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
+.about-company {
+  &__wrapper{
+    grid-row-gap: 170px;
+  }
+
+  &__item {
+    grid-column: span 6;
+    margin: auto 0;
+  }
+  &__item:nth-child(3){
+    text-align: right;
+  }
+
+  &__item--img {
+  }
+
+  &__info {
+    @include setText(24px, 40px, 500);
+  }
+}
+@media (max-width: $breakpoint-lg) {
+  .about-company {
+    &__wrapper{
+      grid-row-gap: 50px;
+    }
+    &__info {
+      @include setText(20px, 40px, 500);
+    }
+  }
+}
+@media (max-width: $breakpoint-md) {
+  .about-company {
+    &__wrapper{
+      grid-row-gap: 10px;
+    }
+    &__item:nth-child(3){
+      order: 4;
+      text-align: left;
+    }
+    &__item:nth-child(4){
+      order: 3;
+    }
+    &__item:nth-child(5){
+      order: 5;
+    }
+    &__item:nth-child(6){
+      order: 6;
+    }
+  }
+}
+
+.questions {
+  margin: 180px 0 220px;
+  text-align: center;
+
+	&__text {
+    margin-bottom: 70px;
+    @include setText(24px, 40px, 500);
+	}
+
+	&__ps {
+    @include setText(24px, 40px, 500);
+    font-family: $twoFamily;
+	}
+}
+@media (max-width: $breakpoint-lg) {
+  .questions {
+    margin: 40px 0 40px;
+
+    &__text {
+      margin-bottom: 30px;
+      @include setText(20px, 40px, 500);
+    }
+    &__ps {
+      @include setText(20px, 40px, 500);
+    }
+  }
+}

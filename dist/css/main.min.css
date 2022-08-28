@@ -2267,7 +2267,7 @@ strong,
   background-image: url("../../img/search.png");
   transition: opacity 0.3s linear;
 }
-.menu__item--search:hover, .menu__link--cart:hover {
+.menu__link--search:hover, .menu__link--cart:hover {
   opacity: 0.8;
 }
 
@@ -2557,25 +2557,10 @@ strong,
   height: 38.18vw;
 }
 @media (max-width: 576px) {
-  .visit__img--1 {
+  .visit__img {
     width: 100%;
-    min-height: unset;
-  }
-  .visit__img--2 {
-    width: 100%;
-    min-height: unset;
-  }
-  .visit__img--3 {
-    width: 100%;
-    min-height: unset;
-  }
-  .visit__img--4 {
-    width: 100%;
-    min-height: unset;
-  }
-  .visit__img--5 {
-    width: 100%;
-    min-height: unset;
+    height: 400px;
+    margin: 0;
   }
   .visit__photo {
     margin-bottom: 68px;
@@ -2710,6 +2695,11 @@ strong,
   }
 }
 
+@media (max-width: 768px) {
+  .bw-block {
+    padding-bottom: 0;
+  }
+}
 .pro-firmy {
   padding: 186px 0 200px;
   text-align: center;
@@ -2816,6 +2806,7 @@ strong,
   font-weight: 500;
   line-height: 18px;
   color: #000;
+  margin-bottom: 4px;
 }
 .comment__post {
   font-size: 16px;
@@ -2983,5 +2974,91 @@ strong,
   .connection__text {
     padding: 15px 20px;
     line-height: 20px;
+  }
+}
+.about-company .title-block__line {
+  margin-bottom: 160px;
+}
+@media (max-width: 992px) {
+  .about-company .title-block__line {
+    margin-bottom: 60px;
+  }
+}
+
+.about-company__wrapper {
+  grid-row-gap: 170px;
+}
+.about-company__item {
+  grid-column: span 6;
+  margin: auto 0;
+}
+.about-company__item:nth-child(3) {
+  text-align: right;
+}
+.about-company__info {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+@media (max-width: 992px) {
+  .about-company__wrapper {
+    grid-row-gap: 50px;
+  }
+  .about-company__info {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .about-company__wrapper {
+    grid-row-gap: 10px;
+  }
+  .about-company__item:nth-child(3) {
+    order: 4;
+    text-align: left;
+  }
+  .about-company__item:nth-child(4) {
+    order: 3;
+  }
+  .about-company__item:nth-child(5) {
+    order: 5;
+  }
+  .about-company__item:nth-child(6) {
+    order: 6;
+  }
+}
+.questions {
+  margin: 180px 0 220px;
+  text-align: center;
+}
+.questions__text {
+  margin-bottom: 70px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+}
+.questions__ps {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  font-family: KronaOne;
+}
+
+@media (max-width: 992px) {
+  .questions {
+    margin: 40px 0 40px;
+  }
+  .questions__text {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+  }
+  .questions__ps {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
   }
 }
