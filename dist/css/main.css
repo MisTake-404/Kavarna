@@ -2497,7 +2497,7 @@ strong,
 
 @media (max-width: 576px) {
   .footer {
-    max-height: 100vh;
+    padding: 40px 0;
   }
 }
 /* Страницы */

@@ -118,7 +118,9 @@
 // }
 @media (max-width: $breakpoint-sm) {
 	.footer{
-		max-height: 100vh;
+		padding: 40px 0;
+		// max-height: 100vh;
+
 	}
 	// .footer__link {
 	// 	width: 77px;
