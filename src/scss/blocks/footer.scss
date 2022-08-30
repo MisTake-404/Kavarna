@@ -109,6 +109,23 @@
 		opacity: 0.8;
   }
 }
+
+// @media (max-width: $breakpoint-lg) {
+// 	.footer__link {
+// 		width: 87px;
+// 		height: 79px;
+// 	}
+// }
+@media (max-width: $breakpoint-sm) {
+	.footer{
+		max-height: 100vh;
+	}
+	// .footer__link {
+	// 	width: 77px;
+	// 	height: 69px;
+	// }
+}
+
 // .container {
 // }
 

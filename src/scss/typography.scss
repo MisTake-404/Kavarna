@@ -23,6 +23,17 @@
   font-family: $twoFamily;
   color: $mainBrown;
 }
+@media (max-width: $breakpoint-sm) {
+  .title-h1 {
+    @include setText(24px, 50px, 500);
+  }
+  .title-h2 {
+    @include setText(24px, 50px, 500);
+  }
+  .title-h3 {
+    @include setText(15px, auto, 500);
+  }
+}
 
 h4,
 .title-h4 {

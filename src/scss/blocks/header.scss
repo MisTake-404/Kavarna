@@ -88,6 +88,12 @@
 	display: none;
 }
 @media (max-width: $breakpoint-lg) {
+	.logo {
+		&__link {
+			width: 67px;
+			height: 59px;
+		}
+	}
 	.header__menu{
 		display: none;
 	}
@@ -179,5 +185,13 @@
 	.modal__close{
 		background-size: cover;
 		background-image: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.11 2.697L2.698 4.11 6.586 8l-3.89 3.89 1.415 1.413L8 9.414l3.89 3.89 1.413-1.415L9.414 8l3.89-3.89-1.415-1.413L8 6.586l-3.89-3.89z' fill='%23fff'%3E%3C/path%3E%3C/svg%3E");
+	}
+}
+@media (max-width: $breakpoint-sm) {
+	.logo {
+		&__link {
+			width: 57px;
+			height: 49px;
+		}
 	}
 }
