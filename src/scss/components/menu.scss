@@ -1,0 +1,76 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Menu ------------------------------
+//  ------------------------------------------------------------------------------
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	&__list--link {
+		margin-right: 40px;
+		@media (max-width: $breakpoint-lg) {
+			margin-right: 20px;
+		}
+	}
+
+	&__item {
+		margin-right: 24px;
+		@media (max-width: $breakpoint-lg) {
+			margin-right: 10px;
+		}
+	}
+
+	&__item:last-child{
+		margin-right: 0;
+	}
+
+	&__link {
+		@include setText(20px, 60px, 500);
+		color: $mainBackground;
+		transition: color $timeTrans linear;
+		@media (max-width: $breakpoint-lg) {
+			@include setText(18px, 60px, 500);
+		}
+	}
+
+	&__link:hover {
+		color: $mainYellow;
+	}
+
+	&__item--cart {
+		margin-right: 30px;
+		@media (max-width: $breakpoint-lg) {
+			margin-right: 10px;
+		}
+	}
+
+	&__link--cart {
+		width: 25px;
+		height: 23px;
+		min-height: 25px;
+		min-width: 23px;
+		background-size: cover;
+		background-position: center;
+		background-image: url("../../img/cart.png");
+		transition: opacity $timeTrans linear;
+	}
+
+	&__link--search {
+		width: 22px;
+		height: 22px;
+		background-size: cover;
+		background-position: center;
+		background-image: url("../../img/search.png");
+		transition: opacity $timeTrans linear;
+	}
+
+	&__link--search:hover, &__link--cart:hover {
+		opacity: 0.8;
+	}
+}

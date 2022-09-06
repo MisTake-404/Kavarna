@@ -1,6 +1,301 @@
 @@include('html/header.html', {
   "title": "E-SHOP"
 })
-
-
+<style>
+  .sc-shop__background--background1 {
+    background-image: url('@img/shop/bg-one.png');
+  }
+  .sc-shop__background--background2 {
+    background-image: url('@img/shop/bg-two.png');
+  }  
+  .sc-shop__background--background3 {
+    background-image: url('@img/shop/bg-three.png');
+  }    
+</style>
+<section class="sc-shop" id="sc-shop">
+  <div class="sc-shop__background sc-shop__background--background1"></div>
+  <div class="sc-shop__background sc-shop__background--background2"></div>
+  <div class="sc-shop__background sc-shop__background--background3"></div>
+  <div class="grid sc-shop__grid">
+    <div class="grid__wrapper">
+      <div class="sc-shop__wrapper-preview">
+        <div class="sc-shop__wrapper-title">
+          <h1 class="sc-shop__title title-h1">E-SHOP</h1>
+          <div class="sc-shop__line line"></div>
+        </div>
+        <div class="sc-shop__wrapper-desc">
+          <p class="sc-shop__desc text">
+            Vaši kávu upražíme, zabalíme a odešleme. Balíme ji do ochranných sáčků se zipem a ventilkem 
+            a díky tomu si zachovává všechny aromatické vlastnosti. Snažíme se chránit přírodu, 
+            proto jsou sáčky recyklovatelné. 
+          </p>
+          <p class="sc-shop__desc text">
+            K tomu je <span class="sc-shop__strong">doprava po celém Brně zdarma!</span> 
+          </p>
+          <p class="sc-shop__desc text">
+            Pokud jste odjinud, stačí udělat nákup za 1000 Kč a take nebudete za dovoz nic platit.
+          </p>
+        </div>
+      </div>
+      <div class="sc-shop__wrapper-category">
+        <div class="sc-shop__category">
+          <div class="sc-shop__cat-circle">
+            <img src="@img/shop/ICON-ARABICA.png" alt="" class="sc-shop__cat-img img">
+          </div>
+          <div class="sc-shop__cat-background" style="background-image: url('@img/shop/ICON-ARABICA.png');"></div>
+          <span class="sc-shop__name-cat text">Káva arabica</span>
+        </div>
+        <div class="sc-shop__category">
+          <div class="sc-shop__cat-background" style="background-image: url('@img/shop/ICON-ROBUSTA.png');"></div>
+          <span class="sc-shop__name-cat text">Káva robusta</span>
+        </div>
+        <div class="sc-shop__category">
+          <div class="sc-shop__cat-background" style="background-image: url('@img/shop/ICON-SMESI.png');"></div>
+          <span class="sc-shop__name-cat text">Naše směsi</span>
+        </div>
+        <div class="sc-shop__category">
+          <div class="sc-shop__cat-background" style="background-image: url('@img/shop/ICON-POUKAZY.png');"></div>
+          <span class="sc-shop__name-cat text">Balíčky a poukazy</span>
+        </div>
+        <div class="sc-shop__category">
+          <div class="sc-shop__cat-background" style="background-image: url('@img/shop/ICON-PRISLUSENSTVI.png');"></div>
+          <span class="sc-shop__name-cat text">Příslušenství</span>
+        </div>
+        <div class="sc-shop__category">
+          <div class="sc-shop__cat-background" style="background-image: url('@img/shop/ICON-MANDLE.png');"></div>
+          <span class="sc-shop__name-cat text">Pražené mandle</span>
+        </div>
+      </div>
+      <div class="sc-shop__wrapper-swiper">
+        <div class="swiper swiper-container swiper--shop">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="sc-shop__product product">
+                <div class="product__wrapper-tag product__wrapper-tag--green">
+                  <span class="product__name-tag text">NOVINKA</span>
+                </div>
+                <div class="product__wrapper-image product__wrapper-image--sizemin">
+                  <img src="@img/shop/product.png" alt="" class="product__img img">
+                </div>
+                <div class="product__wrapper-content">
+                  <div class="product__title text">Columbia Supremo Rio Magdalena 18</div>
+                  <div class="product__wrapper-price">
+                    <span class="product__price text">od 66,96 Kč bez DPH</span>
+                    <span class="product__price product__price--black text">od 77 Kč</span>
+                  </div>
+                  <div class="product__wrapper-button">
+                    <a href="#" class="product__btn btn">DETAIL</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>   
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>     
+      </div>
+      <div class="sc-shop__wrapper-products">
+        <div class="sc-shop__product product">
+          <div class="product__wrapper-tag product__wrapper-tag--green">
+            <span class="product__name-tag text">NOVINKA</span>
+          </div>
+          <div class="product__wrapper-image product__wrapper-image--sizemin">
+            <img src="@img/shop/product.png" alt="" class="product__img img">
+          </div>
+          <div class="product__wrapper-content">
+            <div class="product__title text">Columbia Supremo Rio Magdalena 18</div>
+            <div class="product__wrapper-price">
+              <span class="product__price text">od 66,96 Kč bez DPH</span>
+              <span class="product__price product__price--black text">od 77 Kč</span>
+            </div>
+            <div class="product__wrapper-button">
+              <a href="#" class="product__btn btn">DETAIL</a>
+            </div>
+          </div>
+        </div>
+        <div class="sc-shop__product product">
+          <div class="product__wrapper-tag product__wrapper-tag--red">
+            <span class="product__name-tag text">VÝPRODEJ</span>
+          </div>
+          <div class="product__wrapper-image product__wrapper-image--sizemin">
+            <img src="@img/shop/product.png" alt="" class="product__img img">
+          </div>
+          <div class="product__wrapper-content">
+            <div class="product__title text">Columbia Supremo Rio Magdalena 18</div>
+            <div class="product__wrapper-price">
+              <span class="product__price text">od 66,96 Kč bez DPH</span>
+              <span class="product__price product__price--black text">od 77 Kč</span>
+            </div>
+            <div class="product__wrapper-button">
+              <a href="#" class="product__btn btn">DETAIL</a>
+            </div>
+          </div>
+        </div>
+        <div class="sc-shop__product product">
+          <div class="product__wrapper-tag product__wrapper-tag--violet">
+            <span class="product__name-tag text">NÁŠ TIP</span>
+          </div>
+          <div class="product__wrapper-image product__wrapper-image--sizemin">
+            <img src="@img/shop/product.png" alt="" class="product__img img">
+          </div>
+          <div class="product__wrapper-content">
+            <div class="product__title text">Columbia Supremo Rio Magdalena 18</div>
+            <div class="product__wrapper-price">
+              <span class="product__price text">od 66,96 Kč bez DPH</span>
+              <span class="product__price product__price--black text">od 77 Kč</span>
+            </div>
+            <div class="product__wrapper-button">
+              <a href="#" class="product__btn btn">DETAIL</a>
+            </div>
+          </div>
+        </div>
+        <div class="sc-shop__product product">
+          <div class="product__wrapper-tag product__wrapper-tag--mustard">
+            <span class="product__name-tag text">VHODNÉ NA ESPRESSO</span>
+          </div>
+          <div class="product__wrapper-image product__wrapper-image--sizemin">
+            <img src="@img/shop/product.png" alt="" class="product__img img">
+          </div>
+          <div class="product__wrapper-content">
+            <div class="product__title text">Columbia Supremo Rio Magdalena 18</div>
+            <div class="product__wrapper-price">
+              <span class="product__price text">od 66,96 Kč bez DPH</span>
+              <span class="product__price product__price--black text">od 77 Kč</span>
+            </div>
+            <div class="product__wrapper-button">
+              <a href="#" class="product__btn btn">DETAIL</a>
+            </div>
+          </div>
+        </div>
+        <div class="sc-shop__product product">
+          <div class="product__wrapper-tag product__wrapper-tag--blue">
+            <span class="product__name-tag text">VHODNÉ NA FLITROVANOU KÁVU</span>
+          </div>
+          <div class="product__wrapper-image product__wrapper-image--sizemin">
+            <img src="@img/shop/product.png" alt="" class="product__img img">
+          </div>
+          <div class="product__wrapper-content">
+            <div class="product__title text">Columbia Supremo Rio Magdalena 18</div>
+            <div class="product__wrapper-price">
+              <span class="product__price text">od 66,96 Kč bez DPH</span>
+              <span class="product__price product__price--black text">od 77 Kč</span>
+            </div>
+            <div class="product__wrapper-button">
+              <a href="#" class="product__btn btn">DETAIL</a>
+            </div>
+          </div>
+        </div>
+        <div class="sc-shop__product product">
+          <div class="product__wrapper-image product__wrapper-image--sizemin">
+            <img src="@img/shop/product.png" alt="" class="product__img img">
+          </div>
+          <div class="product__wrapper-content">
+            <div class="product__title text">Columbia Supremo Rio Magdalena 18</div>
+            <div class="product__wrapper-price">
+              <span class="product__price text">od 66,96 Kč bez DPH</span>
+              <span class="product__price product__price--black text">od 77 Kč</span>
+            </div>
+            <div class="product__wrapper-button">
+              <a href="#" class="product__btn btn">DETAIL</a>
+            </div>
+          </div>
+        </div>
+        <div class="sc-shop__product product">
+          <div class="product__wrapper-image product__wrapper-image--sizemin">
+            <img src="@img/shop/product.png" alt="" class="product__img img">
+          </div>
+          <div class="product__wrapper-content">
+            <div class="product__title text">Columbia Supremo Rio Magdalena 18</div>
+            <div class="product__wrapper-price">
+              <span class="product__price text">od 66,96 Kč bez DPH</span>
+              <span class="product__price product__price--black text">od 77 Kč</span>
+            </div>
+            <div class="product__wrapper-button">
+              <a href="#" class="product__btn btn">DETAIL</a>
+            </div>
+          </div>
+        </div>
+        <div class="sc-shop__product product">
+          <div class="product__wrapper-image product__wrapper-image--sizemin">
+            <img src="@img/shop/product.png" alt="" class="product__img img">
+          </div>
+          <div class="product__wrapper-content">
+            <div class="product__title text">Columbia Supremo Rio Magdalena 18</div>
+            <div class="product__wrapper-price">
+              <span class="product__price text">od 66,96 Kč bez DPH</span>
+              <span class="product__price product__price--black text">od 77 Kč</span>
+            </div>
+            <div class="product__wrapper-button">
+              <a href="#" class="product__btn btn">DETAIL</a>
+            </div>
+          </div>
+        </div>
+        <div class="sc-shop__product product">
+          <div class="product__wrapper-image product__wrapper-image--sizemin">
+            <img src="@img/shop/product.png" alt="" class="product__img img">
+          </div>
+          <div class="product__wrapper-content">
+            <div class="product__title text">Columbia Supremo Rio Magdalena 18</div>
+            <div class="product__wrapper-price">
+              <span class="product__price text">od 66,96 Kč bez DPH</span>
+              <span class="product__price product__price--black text">od 77 Kč</span>
+            </div>
+            <div class="product__wrapper-button">
+              <a href="#" class="product__btn btn">DETAIL</a>
+            </div>
+          </div>
+        </div>
+        <div class="sc-shop__product product">
+          <div class="product__wrapper-image product__wrapper-image--sizemin">
+            <img src="@img/shop/product.png" alt="" class="product__img img">
+          </div>
+          <div class="product__wrapper-content">
+            <div class="product__title text">Columbia Supremo Rio Magdalena 18</div>
+            <div class="product__wrapper-price">
+              <span class="product__price text">od 66,96 Kč bez DPH</span>
+              <span class="product__price product__price--black text">od 77 Kč</span>
+            </div>
+            <div class="product__wrapper-button">
+              <a href="#" class="product__btn btn">DETAIL</a>
+            </div>
+          </div>
+        </div>
+        <div class="sc-shop__product product">
+          <div class="product__wrapper-image product__wrapper-image--sizemin">
+            <img src="@img/shop/product.png" alt="" class="product__img img">
+          </div>
+          <div class="product__wrapper-content">
+            <div class="product__title text">Columbia Supremo Rio Magdalena 18</div>
+            <div class="product__wrapper-price">
+              <span class="product__price text">od 66,96 Kč bez DPH</span>
+              <span class="product__price product__price--black text">od 77 Kč</span>
+            </div>
+            <div class="product__wrapper-button">
+              <a href="#" class="product__btn btn">DETAIL</a>
+            </div>
+          </div>
+        </div>
+        <div class="sc-shop__product product">
+          <div class="product__wrapper-image product__wrapper-image--sizemin">
+            <img src="@img/shop/product.png" alt="" class="product__img img">
+          </div>
+          <div class="product__wrapper-content">
+            <div class="product__title text">Columbia Supremo Rio Magdalena 18</div>
+            <div class="product__wrapper-price">
+              <span class="product__price text">od 66,96 Kč bez DPH</span>
+              <span class="product__price product__price--black text">od 77 Kč</span>
+            </div>
+            <div class="product__wrapper-button">
+              <a href="#" class="product__btn btn">DETAIL</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sc-shop__wrapper-button">
+        <a href="#" class="sc-shop__btn btn btn--transparent">DALŠÍ ZBOŽÍ</a>
+      </div>
+    </div>
+  </div>
+</section>
 @@include('html/footer.html', {})

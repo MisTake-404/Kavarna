@@ -2,9 +2,9 @@ import { Navigation, Pagination } from "swiper";
 
 const slidersConfig = {
   example: {
-    modules: [Pagination, Navigation], /* Подключаемые модули */
-    slidesPerView: 2, /* Кол-во отображаемых элементов */
-    spaceBetween: 30, /* Отступ между элементами */
+    modules: [Pagination, Navigation], 
+    slidesPerView: 2, 
+    spaceBetween: 30, 
     breakpoints: {
       320: {
         slidesPerView: 1,

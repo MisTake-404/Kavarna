@@ -1,3 +1,63 @@
 //  ------------------------------------------------------------------------------
-//  ----------------------------- CSS Pages: Главная -----------------------------
+//  ----------------------------- CSS Pages: Main -----------------------------
 //  ------------------------------------------------------------------------------
+
+.sc-offer {
+  &__wrapper-title {}
+
+  &__title {}
+
+  &__break {}
+
+  &__wrapper-button {}
+
+  &__btn {}
+
+  &__wrapper-image {}
+
+  &__img {}
+}
+
+.sc-benefits {
+  &__wrapper-preview {}
+
+  &__wrapper-title {}
+
+  &__title {}
+
+  &__line {}
+
+  &__wrapper-text {}
+
+  &__desc {}
+
+  &__wrapper-items {}
+
+  &__item {}
+
+  &__wrapper-image {}
+
+  &__item {}
+
+  &__img {}
+
+  &__item-title {}
+}
+
+.sc-mainproducts {
+  &__wrapper-title {}
+
+  &__title {}
+
+  &__line {}
+
+  &__wrapper-products {}
+
+  &__product {}
+
+  &__wrapper-button {}
+
+  &__btn {}
+
+  &__wrapper-swiper {}
+}

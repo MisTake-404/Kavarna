@@ -5,33 +5,44 @@
 
 // h1,
 .title-h1 {
-  @include setText(32px, 72px, 500);
+  @include setText(32px, 40px, 400);
+  margin-bottom: 20px;
   font-family: $twoFamily;
   color: $mainBrown;
+  @media (max-width: $breakpoint-md){
+    margin-bottom: 0;
+  }
 }
 
 // h2,
 .title-h2 {
-  @include setText(32px, 72px, 500);
+  @include setText(32px, 40px, 400);
   font-family: $twoFamily;
   color: $mainBrown;
+  @media (max-width: $breakpoint-md){
+    margin-bottom: 0;
+  }
+
+  // @media (max-width: $breakpoint-lg){
+  //   padding: 40px 64px;
+  // }
 }
 
 // h3,
 .title-h3 {
-  @include setText(18px, auto, 500);
+  @include setText(18px, auto, 400);
   font-family: $twoFamily;
   color: $mainBrown;
 }
 @media (max-width: $breakpoint-sm) {
   .title-h1 {
-    @include setText(24px, 50px, 500);
+    @include setText(24px, 50px, 400);
   }
   .title-h2 {
-    @include setText(24px, 50px, 500);
+    @include setText(24px, 50px, 400);
   }
   .title-h3 {
-    @include setText(15px, auto, 500);
+    @include setText(15px, auto, 400);
   }
 }
 
@@ -52,14 +63,14 @@ h6,
 
 // p,
 .text {
-  @include setText(24px, 40px, 500);
+  @include setText(24px, 40px, 400);
   color: $mainBrown;
 }
 
 // span,
 .text-span {
   // @include setText(14px, 24px, 400);
-  @include setText(21px, auto, 500);
+  @include setText(21px, auto, 400);
   color: $mainBrown;
 }
 

@@ -19,7 +19,6 @@
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
-  padding-bottom: 4px; // error-padding-gap
 
   &__label {
     @include setText(16px, 24px, 700);

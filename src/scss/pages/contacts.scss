@@ -1,168 +1,125 @@
 //  ------------------------------------------------------------------------------
-//  ----------------------------- CSS Pages: Контакты -----------------------------
+//  ----------------------------- CSS Pages: Contacts -----------------------------
 //  ------------------------------------------------------------------------------
 
 .title-block {
-	padding: 186px 0 0 0;
-	// margin-top: 230px;
-	// margin-bottom: 20px;
+	margin-bottom: 88px;
 
+	@media (max-width: $breakpoint-lg) {
+		margin-bottom: 60px;
+	}
 	&__container {
 		text-align: center;
-	}
-
-	&__title {
-
 	}
 
 	&__line {
 		background-color: $mainYellow;
 		margin: 0 auto;
-	}
-
-}
-@media (max-width: $breakpoint-lg) {
-	.title-block{
-		padding-top: calc(230px / 4);
-	}
-}
-
-.container {
-
-}
-
-.title-h2 {
-
-}
-
-.line {
-
-}
-
-.address {
-	background-image: url(../../img/address-bg.png);
-	background-position: left top 210px;
-	background-repeat: no-repeat;
-
-	&__info {
 
 	}
 
-	&__item {
+}
 
-	}
+.address{
+	$self: &;
 
-	&__title {
-		margin-top: 80px;
-	}
-	@media (max-width: $breakpoint-lg) {
-		&__title{
-			margin-top: calc(88px / 2);
-			margin-bottom: calc(63px / 2);
+	&--contacts {
+		background-position: left top 210px;
+		background-repeat: no-repeat;
+		margin-bottom: 170px;
+		padding-top: 186px;
+
+		@media (max-width: $breakpoint-lg) {
+			padding-top: 60px;
 		}
-	}
 
-	&__text {
-	}
-
-	&__desc {
-	}
-	@media (max-width: $breakpoint-lg) {
-		&__desc{
-		font-size: 18px;
+		@media (max-width: $breakpoint-sm) {
+			padding-top: 30px;
 		}
-	}
 
-	&__map {
-
-	}
-
-	&__img {
-
-	}
-
-}
-@media (max-width: $breakpoint-lg) {
-	.address{
-		margin-bottom: calc(170px / 8);
-
-		&__info{
-			margin-bottom: calc(80px / 2);
+		#{ $self }__title {
+			@media (max-width: $breakpoint-lg) {
+				// margin-bottom: 30px;
+			}
 		}
+
+		#{ $self }__desc {
+			@media (max-width: $breakpoint-lg) {
+				font-size: 18px;
+			}
+		}
+
+		#{ $self }__info {
+			@media (max-width: $breakpoint-lg) {
+				margin-bottom: 60px;
+			}
+		}
+
 	}
 }
 
 .bw-block {
 	width: 100%;
 	text-align: center;
-	background-image: url("../img/yellow_block.png");
 	background-position: bottom;
 	padding: 30px 0 60px;
 
 	display: flex;
 	flex-direction: column;
 
+	@media (max-width: $breakpoint-md){
+		padding-bottom: 0;
+	}
+
 	&__photo {
 		display: flex;
+		@media (max-width: $breakpoint-md) {
+			flex-wrap: wrap;
+			order: 1;
+		}
 	}
 
 	&__img {
 		min-width: 33%;
 		filter: grayscale(100%);
-	}
 
-	&__img--1 {
+		@media (max-width: $breakpoint-lg) {
+			min-height: 400px;
+		}
 
+		@media (max-width: $breakpoint-md) {
+			display: none;
+			min-height: unset;
+		}
 	}
 
 	&__img--2 {
-
-	}
-
-	&__img--3 {
-
+		@media (max-width: $breakpoint-md) {
+			display: block;
+		}
 	}
 
 	&__container {
 		text-align: center;
+		padding-top: 70px;
+		@media (max-width: $breakpoint-md) {
+			order: 2;
+			padding-bottom: 40px;
+			padding-top: 20px;
+		}
 	}
 
 	&__desc {
-		margin: 70px 0 40px;
-		@include setText(21px, auto, 600);
-	}
-	&__link {
-		display: inline-block;
-		color: $mainBrown;
-		@include setText(21px, auto, 600);
-		padding: 30px 60px;
-		border: 1px solid $mainBrown;
-		background-color: transparent;
-		transition: color $timeTrans linear, background-color $timeTrans linear;
-	}
-	&__link:hover {
-		color: $mainBackground;
-		background-color: $mainBrown;
+		margin: 0 0 40px;
+		@include setText(21px, 29px, 500);
+		@media (max-width: $breakpoint-md) {
+			margin: 0 0 20px;
+		}
 	}
 
-	@media (max-width: $breakpoint-md) {
-		&__photo {
-			flex-wrap: wrap;
-		}
-		&__photo {
-			order: 2;
-		}
-		&__container {
-			order: 1;
-			padding-bottom: 40px;
-		}
-		&__desc {
-			margin: 20px 0 20px;
-		}
-	}
-}
-@media (max-width: $breakpoint-md) {
-	.bw-block{
-		padding-bottom: 0;
+	&__wrapper-button {
+		max-width: 218px;
+		width: 218px;
+		margin: 0 auto;
 	}
 }

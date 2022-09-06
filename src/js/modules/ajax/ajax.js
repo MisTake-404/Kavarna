@@ -57,13 +57,6 @@ const ajaxAsyncSend = async (argForm, argUrl) => {
   }
 }
 
-/*
-  argContainer - контейнер, в котором расположена форма
-  argSubmit - кнопка отправки формы
-  argUrl - принимает URL запроса (адрес отправки запроса)
-  argIsError - boolean (true/false). Валидация полей формы на наличие значения
-  argEndLine - адрес адресации после отправки запроса. (Если нет необходимости, то значение "none")
-*/
 const ajaxForms = (argContainer, argSubmit, argUrl = '/', argIsError = true, argEndLine = '/thanks') => {
   const data = getForms(argContainer, argSubmit);
 

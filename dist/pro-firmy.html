@@ -68,23 +68,19 @@
             <li class="menu__item menu__item--search"><a href="" class="menu__link text-link menu__link--search"></a></li>
           </ul>
         </nav>
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-          <span></span>
-        </label>
+        <div class="menu__btn">
+          <span class="header__line"></span>
+        </div>
       </div>
     </div>
   </header>
 
-
-
-
-<section class="pro-firmy">
+<section class="pro-firmy" style="background-image: url('img/IMAGE-FIRMY-SUBTLE.jpg')">
   <div class="container pro-firmy__container">
     <h1 class="pro-firmy__title title-h1">PRO FIRMY</h1>
     <div class="pro-firmy__line line"></div>
     <p class="pro-firmy__desc text">
-      Nakupujte u nás za ještě výhodnější velkoobchodní ceny. <br>
+      Nakupujte u nás za ještě výhodnější velkoobchodní ceny.<br>
       Rychle vám dodáme vzorky všech našich káv a při větším odběru pronajmeme kávovary zdarma.<br>
       Řešíme také kompletní kávovarový servis a můžeme vám během toho zapůjčit náhradní přístoj.<br>
       Zajišťujeme rovněž filtry, odvápňovače i všechno ostatní příslušenství.<br>
@@ -104,7 +100,6 @@
     </div>
   </div>
 </section>
-
 <section class="customers">
   <div class="container">
     <h2 class="title-h2 customers__title">NAŠI SPOKOJENÍ ZÁKAZNÍCI</h2>
@@ -152,7 +147,6 @@
     </ul>
   </div>
 </section>
-
 <section class="connection">
   <div class="container">
     <h2 class="title-h2 connection__title">POJĎME SE DO TOHO PUSTIT</h2>
@@ -164,13 +158,13 @@
     <form action="" class="connection__form">
       <input type="text" name="" value="" placeholder="Jméno a Příjmení" class="connection__input text connection__name">
       <input type="text" name="" value="" placeholder="E-mail" class="connection__input text connection__email">
-      <textarea name="name" placeholder="Napište svou zprávu." class="connection__input text connection__text"></textarea>
-      <a href="#" class="text-link text connection__btn" name="">Odeslat</a>
+      <textarea name="name" placeholder="Napište svou zprávu." class="connection__input connection__input--textarea text connection__text"></textarea>
+      <div class="connection__wrapper-button">
+        <a href="#" class="btn connection__btn">Odeslat</a>
+      </div>
     </form>
   </div>
 </section>
-
-
 <footer class="footer">
   <div class="container">
     <div class="flex footer__flex footer__flex--col">

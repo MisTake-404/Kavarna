@@ -3,16 +3,13 @@ import Choices from "choices.js";
 /* DOCS: https://github.com/Choices-js/Choices */
 /* TUTORIAL: https://www.youtube.com/watch?v=dnC7XCYb9Qg */
 
-/*
-  Инициализация кастомных select
-*/
 const selects = (selects) => {
   const choises = [];
 
   const config = {
     searchEnabled: false,
     searchChoices: false,
-    placeholder: true,  // Наличие placeholder
+    placeholder: true,  //  placeholder
     loadingText: 'Загрузка...',
     noResultsText: 'Нет результатов',
     noChoicesText: 'Нет результатов',

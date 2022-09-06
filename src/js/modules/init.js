@@ -10,7 +10,6 @@ import ItcTabs from "./tabs/tabs.js";
 import preloaderOff from "./preloader/preloader.js";
 import ajaxForms from "./ajax/ajax.js";
 
-// Все модули, которые необходимо экспортировать
 export const allModules = {
   selects,
   anchors,
@@ -25,7 +24,6 @@ export const allModules = {
   ajaxForms
 };
 
-// Все модули, которые необходимо запустить при загрузке страницы
 export const initModules = () => {
   return {
     init: true

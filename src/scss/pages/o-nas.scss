@@ -1,0 +1,106 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Pages: About -----------------------------
+//  ------------------------------------------------------------------------------
+.about-company {
+	.title-block {
+		&__line {
+			// margin-bottom: 160px;
+			@media (max-width: $breakpoint-lg) {
+				// margin-bottom: 60px;
+			}
+		}
+	}
+}
+
+.about-company {
+	padding-top: 186px;
+
+	@media (max-width: $breakpoint-lg) {
+		padding-top: 60px;
+	}
+
+	@media (max-width: $breakpoint-sm) {
+		padding-top: 30px;
+	}
+
+	&__wrapper {
+		grid-row-gap: 170px;
+		@media (max-width: $breakpoint-lg) {
+			grid-row-gap: 50px;
+		}
+		@media (max-width: $breakpoint-sm) {
+			grid-row-gap: 10px;
+		}
+	}
+
+	&__item {
+		grid-column: span 6;
+		margin: auto 0;
+
+		&:nth-child(3){
+			text-align: right;
+		}
+
+		@media (max-width: $breakpoint-md) {
+			&:nth-child(3) {
+				order: 4;
+				text-align: left;
+			}
+
+			&:nth-child(4) {
+				order: 3;
+			}
+
+			&:nth-child(5) {
+				order: 5;
+			}
+
+			&:nth-child(6) {
+				order: 6;
+			}
+		}
+	}
+
+
+	&__info {
+		@include setText(24px, 40px, 400);
+		@media (max-width: $breakpoint-lg) {
+			@include setText(20px, 40px, 400);
+		}
+	}
+
+	.grid {
+		margin-bottom: 180px;
+
+		@media (max-width: $breakpoint-lg) {
+			margin-bottom: 40px;
+		}
+	}
+}
+
+.questions {
+	margin: 0 0 220px;
+	text-align: center;
+
+	@media (max-width: $breakpoint-lg) {
+		margin: 0 0 40px;
+	}
+
+	&__text {
+		margin-bottom: 70px;
+		@include setText(24px, 40px, 400);
+
+		@media (max-width: $breakpoint-lg) {
+			@include setText(20px, 40px, 400);
+		}
+	}
+
+	&__ps {
+		@include setText(24px, 40px, 400);
+		font-family: $twoFamily;
+
+		@media (max-width: $breakpoint-lg) {
+			@include setText(20px, 40px, 400);
+		}
+	}
+}

@@ -2,35 +2,16 @@
 //  ----------------------------- CSS Components Files ------------------------------
 //  ------------------------------------------------------------------------------
 
-/* Сетка */
 @import 'grid.scss';
 
-/* Сетка - Тестирование */
 @import 'test-grid.scss';
 
-/* Иконки */
 @import 'icons.scss';
 
-/* Фиксирование элемента */
-@import 'fixed.scss';
-
-/* Кнопки */
 @import 'buttons/init.scss';
-
-/* Секция */
-@import 'section.scss';
 
 /* Preloader */
 @import 'preloader.scss';
-
-/* Checkbox */
-@import 'checkbox.scss';
-
-/* Radio */
-@import 'radio.scss';
-
-/* Select */
-@import 'select.scss';
 
 /* Input */
 @import 'input.scss';
@@ -44,8 +25,10 @@
 /* Slider: Swiper */
 @import 'swiper.scss';
 
-/* Accordion */
-@import 'accordion.scss';
+@import 'product.scss';
 
-/* Tabs */
-@import 'tabs.scss';
+// Контенер
+@import 'container.scss';
+
+// Контенер
+@import 'menu.scss';

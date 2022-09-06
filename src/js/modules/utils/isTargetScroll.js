@@ -1,8 +1,4 @@
-/* 
-  Функция сравнивает позицию экрана с позицией элементов при скроллинге 
-  Если позиции совпадают, то вызывается callback функция с аргументом element
-  height - нужно ли учитывать высоту элемента
-*/
+
 const isTargetScroll = (elements, callback) => {
   const comparisonPosition = (windowOffset, elementOffset, elementHeight, element) => {
     if(elementOffset <= windowOffset && (elementOffset + elementHeight) >= windowOffset) {
