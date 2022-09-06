@@ -1,106 +1,102 @@
 //  ------------------------------------------------------------------------------
-//  ----------------------------- CSS Pages: About -----------------------------
+//  ----------------------------- CSS Pages: О нас -----------------------------
 //  ------------------------------------------------------------------------------
 .about-company {
-	.title-block {
-		&__line {
-			// margin-bottom: 160px;
-			@media (max-width: $breakpoint-lg) {
-				// margin-bottom: 60px;
-			}
-		}
-	}
+  .title-block {
+
+    &__container {
+    }
+
+    &__title {
+    }
+
+    &__line {
+      margin-bottom: 160px;
+    }
+  }
+  @media (max-width: $breakpoint-lg) {
+    .title-block {
+      &__line {
+        margin-bottom: 60px;
+      }
+    }
+  }
 }
-
 .about-company {
-	padding-top: 186px;
+  &__wrapper{
+    grid-row-gap: 170px;
+  }
 
-	@media (max-width: $breakpoint-lg) {
-		padding-top: 60px;
-	}
+  &__item {
+    grid-column: span 6;
+    margin: auto 0;
+  }
+  &__item:nth-child(3){
+    text-align: right;
+  }
 
-	@media (max-width: $breakpoint-sm) {
-		padding-top: 30px;
-	}
+  &__item--img {
+  }
 
-	&__wrapper {
-		grid-row-gap: 170px;
-		@media (max-width: $breakpoint-lg) {
-			grid-row-gap: 50px;
-		}
-		@media (max-width: $breakpoint-sm) {
-			grid-row-gap: 10px;
-		}
-	}
-
-	&__item {
-		grid-column: span 6;
-		margin: auto 0;
-
-		&:nth-child(3){
-			text-align: right;
-		}
-
-		@media (max-width: $breakpoint-md) {
-			&:nth-child(3) {
-				order: 4;
-				text-align: left;
-			}
-
-			&:nth-child(4) {
-				order: 3;
-			}
-
-			&:nth-child(5) {
-				order: 5;
-			}
-
-			&:nth-child(6) {
-				order: 6;
-			}
-		}
-	}
-
-
-	&__info {
-		@include setText(24px, 40px, 400);
-		@media (max-width: $breakpoint-lg) {
-			@include setText(20px, 40px, 400);
-		}
-	}
-
-	.grid {
-		margin-bottom: 180px;
-
-		@media (max-width: $breakpoint-lg) {
-			margin-bottom: 40px;
-		}
-	}
+  &__info {
+    @include setText(24px, 40px, 500);
+  }
+}
+@media (max-width: $breakpoint-lg) {
+  .about-company {
+    &__wrapper{
+      grid-row-gap: 50px;
+    }
+    &__info {
+      @include setText(20px, 40px, 500);
+    }
+  }
+}
+@media (max-width: $breakpoint-md) {
+  .about-company {
+    &__wrapper{
+      grid-row-gap: 10px;
+    }
+    &__item:nth-child(3){
+      order: 4;
+      text-align: left;
+    }
+    &__item:nth-child(4){
+      order: 3;
+    }
+    &__item:nth-child(5){
+      order: 5;
+    }
+    &__item:nth-child(6){
+      order: 6;
+    }
+  }
 }
 
 .questions {
-	margin: 0 0 220px;
-	text-align: center;
-
-	@media (max-width: $breakpoint-lg) {
-		margin: 0 0 40px;
-	}
+  margin: 180px 0 220px;
+  text-align: center;
 
 	&__text {
-		margin-bottom: 70px;
-		@include setText(24px, 40px, 400);
-
-		@media (max-width: $breakpoint-lg) {
-			@include setText(20px, 40px, 400);
-		}
+    margin-bottom: 70px;
+    @include setText(24px, 40px, 500);
 	}
 
 	&__ps {
-		@include setText(24px, 40px, 400);
-		font-family: $twoFamily;
-
-		@media (max-width: $breakpoint-lg) {
-			@include setText(20px, 40px, 400);
-		}
+    @include setText(24px, 40px, 500);
+    font-family: $twoFamily;
 	}
+}
+@media (max-width: $breakpoint-lg) {
+  .questions {
+    margin: 40px 0 40px;
+
+    &__text {
+      margin-bottom: 30px;
+      @include setText(20px, 40px, 500);
+    }
+    &__ps {
+      @include setText(20px, 40px, 500);
+    }
+  }
 }
