@@ -3123,31 +3123,17 @@ strong,
   }
 }
 
-.about-company {
-  padding-top: 186px;
+.about-company .title-block__line {
+  margin-bottom: 160px;
 }
 @media (max-width: 992px) {
-  .about-company {
-    padding-top: 60px;
+  .about-company .title-block__line {
+    margin-bottom: 60px;
   }
 }
-@media (max-width: 576px) {
-  .about-company {
-    padding-top: 30px;
-  }
-}
+
 .about-company__wrapper {
   grid-row-gap: 170px;
-}
-@media (max-width: 992px) {
-  .about-company__wrapper {
-    grid-row-gap: 50px;
-  }
-}
-@media (max-width: 576px) {
-  .about-company__wrapper {
-    grid-row-gap: 10px;
-  }
 }
 .about-company__item {
   grid-column: span 6;
@@ -3156,7 +3142,26 @@ strong,
 .about-company__item:nth-child(3) {
   text-align: right;
 }
+.about-company__info {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+@media (max-width: 992px) {
+  .about-company__wrapper {
+    grid-row-gap: 50px;
+  }
+  .about-company__info {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+  }
+}
 @media (max-width: 768px) {
+  .about-company__wrapper {
+    grid-row-gap: 10px;
+  }
   .about-company__item:nth-child(3) {
     order: 4;
     text-align: left;
@@ -3171,59 +3176,36 @@ strong,
     order: 6;
   }
 }
-.about-company__info {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 40px;
-}
-@media (max-width: 992px) {
-  .about-company__info {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 40px;
-  }
-}
-.about-company .grid {
-  margin-bottom: 180px;
-}
-@media (max-width: 992px) {
-  .about-company .grid {
-    margin-bottom: 40px;
-  }
-}
-
 .questions {
-  margin: 0 0 220px;
+  margin: 180px 0 220px;
   text-align: center;
-}
-@media (max-width: 992px) {
-  .questions {
-    margin: 0 0 40px;
-  }
 }
 .questions__text {
   margin-bottom: 70px;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 40px;
-}
-@media (max-width: 992px) {
-  .questions__text {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 40px;
-  }
 }
 .questions__ps {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 40px;
   font-family: KronaOne;
 }
+
 @media (max-width: 992px) {
+  .questions {
+    margin: 40px 0 40px;
+  }
+  .questions__text {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+  }
   .questions__ps {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 40px;
   }
 }
